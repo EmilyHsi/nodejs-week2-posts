@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "ae1127a7-4d2d-464e-9ce6-95a14e8011ee",
+		"name": "week2-posts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://agile-citadel-02935.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"agile-citadel-02935",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"emily\",\n    \"content\": \"test\",\n    \"tags\": [\"aa\"],\n    \"type\": \"person\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://agile-citadel-02935.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"agile-citadel-02935",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"alex\",\n    \"content\": \"12345\",\n    \"tags\": [\"aa\"],\n    \"type\": \"person\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://agile-citadel-02935.herokuapp.com/posts/62640ad81cd1b451d0cb1a80",
+					"protocol": "https",
+					"host": [
+						"agile-citadel-02935",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"62640ad81cd1b451d0cb1a80"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"emily\",\n    \"content\": \"test\",\n    \"tags\": [\"aa\"],\n    \"type\": \"person\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://agile-citadel-02935.herokuapp.com/posts/6263fc76b9abb3fca13403c5",
+					"protocol": "https",
+					"host": [
+						"agile-citadel-02935",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"6263fc76b9abb3fca13403c5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"emily\",\n    \"content\": \"test\",\n    \"tags\": [\"aa\"],\n    \"type\": \"person\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://agile-citadel-02935.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"agile-citadel-02935",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
