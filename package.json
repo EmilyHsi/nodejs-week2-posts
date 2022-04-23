@@ -1,0 +1,21 @@
+{
+  "name": "nodeweek2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/www"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express-generator": "^4.16.1",
+    "mongoose": "^6.3.1"
+  },
+  "engines": {
+    "node": "v16.x"
+  }
+}
